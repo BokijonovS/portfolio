@@ -1,0 +1,584 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,200&family=Lato&family=M+PLUS+1:wght@400;500;600;700;800&family=Outfit:wght@300&family=Playfair+Display:wght@700&family=Poppins:wght@300&family=Roboto+Slab:wght@400;500;800&family=Vujahday+Script&family=Zen+Kurenaido&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Roboto";
+  list-style: none;
+  box-sizing: border-box;
+  background: #000 !important;
+}
+
+section {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg img {
+  width: 110vw;
+  height: 110vh;
+  filter: brightness(0.6);
+}
+
+.rock1 {
+  position: absolute !important;
+  left: 10vw !important;
+  top: 20vh !important;
+}
+
+.rock1 img {
+  width: 40%;
+  filter: brightness(0.5);
+}
+.text {
+  display: flex !important;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center !important;
+  align-content: center !important;
+  text-align: center;
+  align-items: center !important;
+  margin-top: 30px;
+  z-index: 10;
+}
+
+.text h1 {
+  font-family: "AlphaCentauri" !important;
+
+  font-size: 8vw;
+  color: #fff;
+  letter-spacing: 10px;
+  position: absolute;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .text {
+    z-index: 99999 !important;
+  }
+  .text h4 {
+    left: 10vw;
+    font-size: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .text h4 {
+    left: 10vw;
+    font-size: 20px;
+    width: 200px;
+  }
+}
+.earth img {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 34vw;
+  top: 25vh;
+  z-index: 20;
+  filter: brightness(0.7);
+}
+.mars img {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  left: 24vw;
+  top: 15vh;
+  z-index: 1;
+  filter: brightness(0.7);
+}
+
+.neptune img {
+  width: 320px;
+  height: 320px;
+  position: absolute;
+  left: 64vw;
+  top: 45vh;
+  z-index: 1;
+  filter: brightness(0.7);
+}
+
+.mid {
+  left: -150px !important;
+  bottom: -100px !important;
+  top: unset !important;
+}
+
+.mid img {
+  width: 100%;
+  z-index: 2;
+  left: -20px;
+  top: 20vh !important;
+  filter: brightness(0.8);
+}
+
+.fore {
+  right: -50px !important;
+  bottom: -200px !important;
+  top: 0px !important;
+  left: unset !important;
+}
+
+.fore img {
+  width: 400px;
+  height: 110vh;
+  z-index: 3;
+  filter: brightness(0.5);
+}
+
+/* SWIPER */
+
+#sectiontwo {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.rockbg1 {
+  position: absolute;
+  transform: scale(0.2);
+  filter: brightness(0.2);
+  top: 20vh;
+  left: 0;
+  z-index: 1;
+}
+
+.planet-links {
+  width: 95%;
+  height: 5vh;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.planet-links .swiper-pagination-bullet {
+  opacity: 0.2;
+  outline: none;
+}
+.planet-links .swiper-pagination-bullet-active {
+  color: #fff;
+  opacity: 1;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  background: transparent;
+}
+
+.swiper-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 50px 0;
+}
+
+.swiper-wrapper {
+  transition-delay: 0.5s;
+}
+.main-navbar {
+  background-color: transparent;
+  /* width: 100vw; */
+  height: 80px;
+  position: fixed;
+  z-index: 10;
+  /* transition: 0.9s; */
+  transition: all 0.3s ease;
+}
+
+.nav-image {
+  height: 80px;
+  padding-left: 30px;
+}
+.background-image {
+  width: 100%;
+  object-fit: cover;
+}
+@-webkit-keyframes slide {
+  0% {
+    transform: translate(0px, 100px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@-moz-keyframes slide {
+  0% {
+    transform: translate(0px, 100px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@-o-keyframes slide {
+  0% {
+    transform: translate(0px, 100px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translate(0px, 100px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.page {
+  animation-name: slide;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  top: 50px;
+  right: -130px;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 560px) {
+  ul {
+    flex-direction: column;
+    top: 170px;
+    right: -30px;
+  }
+  ul li {
+    margin-bottom: 15px !important;
+  }
+}
+ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+ul li a {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 63px;
+  background: #333;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #666;
+  transition: 0.5s;
+}
+
+ul li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #03e9f4;
+  transition: 0.5s;
+  transform: scale(0.9);
+  z-index: -1;
+}
+
+ul li a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #03e9f4;
+}
+
+ul li a:hover {
+  color: #03e9f4;
+  box-shadow: 0 0 5px #03e9f4;
+  text-shadow: 0 0 5px #03e9f4;
+}
+.get-in-touch {
+  font-family: "Poppins", sans-serif !important;
+}
+/* button say hello */
+.btn-say-hello-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+.btn-say-hello {
+  position: relative;
+  display: inline-block;
+  padding: 30px;
+  margin-left: 40px;
+  color: #03e9f4;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+  margin-right: 50px;
+}
+
+.btn-say-hello:hover {
+  background: #03e9f4;
+  color: #333;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  text-decoration: none !important;
+}
+.btn-say-hello span {
+  position: absolute;
+  display: block;
+}
+
+.btn-say-hello span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.btn-say-hello span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.btn-say-hello span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.btn-say-hello span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+/* footer */
+
+.footer-main-div {
+  width: 100%;
+  background-color: transparent;
+  font-family: "Poppins", sans-serif !important;
+}
+.footer-main-div > footer > h5 {
+  margin-bottom: 0;
+  padding: 31px 0px;
+  text-align: center;
+  color: white !important;
+}
+.footer-main-div > footer > h5 > a {
+  text-decoration: none;
+  color: #03e9f4;
+}
+.section-say-hello {
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 83%);
+  /* background-color: #111; */
+  background: url("https://www.pixelstalk.net/wp-content/uploads/images1/Dark-Space-Wallpapers-HD.jpg")
+    no-repeat center;
+  display: flex;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.section-before-say-hello {
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 83%);
+  /* background-color: #111; */
+  background: url("https://www.pixelstalk.net/wp-content/uploads/images1/Dark-Space-Wallpapers-HD.jpg")
+    no-repeat center;
+  display: flex;
+  height: 120vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.section-about-me {
+  clip-path: polygon(0 0, 100% 20%, 100% 83%, 0% 100%);
+  /* background-color: #111; */
+  background: url("https://www.pixelstalk.net/wp-content/uploads/images1/Dark-Space-Wallpapers-HD.jpg")
+    no-repeat center;
+  display: flex;
+  height: 120vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.btn-view-cv-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+.btn-view-cv {
+  position: relative;
+  display: inline-block;
+  padding: 30px;
+  color: #03e9f4;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+  margin-right: 50px;
+}
+
+.btn-view-cv:hover {
+  background: #03e9f4;
+  color: #333;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  text-decoration: none !important;
+  z-index: 100 !important;
+}
+.btn-view-cv span {
+  position: absolute;
+  display: block;
+}
+
+.btn-view-cv span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.btn-view-cv span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.btn-view-cv span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.btn-view-cv span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+.gradientBG {
+  background-color: #111 !important;
+  /* opacity: 0.7; */
+  width: 100vw !important;
+}
